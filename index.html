@@ -27,6 +27,8 @@
     z-index: 1000;
   }
   img {
+    display: block;       /* Faz a imagem ser bloco */
+    margin: 0 auto;       /* Centraliza horizontalmente */
     max-width: 100%;
     height: auto;
     border: 2px solid #333;
@@ -36,6 +38,9 @@
     padding: 12px 25px;
     font-size: 18px;
     cursor: pointer;
+    display: block;       /* Garante que o botão fique em bloco */
+    margin-left: auto;    /* Centraliza */
+    margin-right: auto;   /* Centraliza */
   }
 </style>
 </head>
@@ -45,7 +50,7 @@
 
 <h1>Vote na imagem</h1>
 
-<img src="https://via.placeholder.com/350x200.png?text=Imagem+para+voto" alt="Imagem para votação" />
+<img src="/56f6f0db-b8ce-4bc7-bcbd-2ec4fe65c9db.png" alt="Imagem para votação" />
 
 <button id="btnVotar">Votar</button>
 
@@ -53,7 +58,6 @@
   const botao = document.getElementById('btnVotar');
 
   botao.addEventListener('click', () => {
-    // Aqui pode colocar alguma ação ao votar, se quiser
     alert('Obrigado por votar!');
   });
 </script>
